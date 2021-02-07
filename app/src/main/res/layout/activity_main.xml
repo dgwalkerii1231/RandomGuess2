@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="185dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="29dp"
+        android:text="Enter the Popup Value Below"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txtGuess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:ems="10"
+        android:hint="Enter guess"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#808080"
+        android:textCursorDrawable="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="toast"
+        android:textColor="#000000"
+        app:backgroundTint="#FB0303"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnGuess"
+        app:layout_constraintStart_toStartOf="@+id/txtGuess" />
+
+    <Button
+        android:id="@+id/btnGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="guess"
+        android:textColor="#000000"
+        app:backgroundTint="#FB0303"
+        app:layout_constraintEnd_toEndOf="@+id/txtGuess"
+        app:layout_constraintTop_toBottomOf="@+id/txtGuess" />
+</androidx.constraintlayout.widget.ConstraintLayout>
